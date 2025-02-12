@@ -1,0 +1,57 @@
+---
+import Layout from "./Layout.astro";
+
+const months = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+    'July',
+    'August',
+    'September',
+    'October',
+    'November',
+    'December'
+]
+
+function formatDate(date: string){
+    const postDate = new Date(date)
+    const monthInt = postDate.getMonth()
+    return months[monthInt] + " " + postDate.getDate() + ", " + postDate.getFullYear()
+}
+
+const { frontmatter } = Astro.props;
+const { title, date, category, author, tags} = frontmatter;
+const processedDate = formatDate(date)
+---
+
+<Layout title={title}>
+    <div class="container">
+        <h3 style=`font-family: "Libre Franklin", "Helvetica Neue", "helvetica", "arial", "sans-serif"; font-weight: "bold"`>
+            {title}
+        </h3>
+        <strong style=`font-family: "Libre Franklin", "Helvetica Neue", helvetica`>{processedDate}</strong>
+        <br />
+        
+        <br />
+            <slot />
+        <span>{author}</span>
+        <br />
+        <span>{category}</span>
+        <br />
+        {
+            tags && (tags.map((tag:any) => (<span>{tag}</span><br />)))
+        }
+    </div>
+</Layout>
+
+<style>
+    .container{
+        position: relative;
+        padding-right: 20px;
+        padding-left: 20px;
+        max-width: 100vw;
+    }
+</style>

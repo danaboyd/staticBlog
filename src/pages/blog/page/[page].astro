@@ -1,0 +1,39 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../../layouts/Layout.astro"
+import { getCollection } from 'astro:content';
+
+
+export const getStaticPaths = (async ({paginate}) => {
+    const allPosts = await getCollection("blog");
+    allPosts.sort((a:any, b:any) => (b.data.date - a.data.date))
+
+    const paths = paginate(allPosts, {pageSize: 5})
+    
+    return paths
+}) satisfies GetStaticPaths;
+
+const { page } = Astro.props
+
+---
+
+<Layout>
+<div class="container">in the blog</div>
+    <ol>
+    {
+        page.data.map((post: any) => (
+            <li>
+                <a href={"/blog/" + post.id} >{post.data.title}</a> 
+            </li>
+        ))
+    }
+    </ol>
+<div>
+    {
+        page.url.prev && (<a href={page.url.prev}>previous</a>)
+    }
+    {
+        page.url.next && (<a href={page.url.next}>next</a>)
+    }
+</div>
+</Layout>

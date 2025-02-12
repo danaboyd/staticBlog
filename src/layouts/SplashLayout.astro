@@ -1,0 +1,91 @@
+---
+const {title }  = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>DanaBoyd.com {title && " " + title}</title>
+	</head>
+	<body>
+			<div class="page">
+				<div class="logo">
+					<div class="logoImage">
+						<a href="/"><img class="logoImage" src="/images/logo.png" /></a>
+					</div>
+				</div>
+				<div class="wrapper">
+					<div class="content" id="content">
+						<slot />
+					</div>
+				</div>
+				<div class="bottom"></div>
+			</div>
+	</body>
+</html>
+
+<style>
+	* {
+		box-sizing: border-box;
+	}
+	html,
+	body {
+		padding: 20px;
+		margin: 0;
+		width: 100vw;
+		height: 100%;
+		background-color: rgb(255, 255, 255);
+		background-image: url("/images/forestReading.jpg");
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+		width: 100vw;
+		padding: 0px;
+		margin: 0px;
+		box-sizing: border-box;
+	}
+	.page {
+		position: relative;
+		top: calc(100vh - 300px);
+		@media screen and (max-height: 500px) {
+			top: 50px
+		}
+		width: 100vw;
+		display: grid;
+		grid-template-columns: auto;
+		gap: 0px;
+	}
+	.logo {
+		position: relative;
+		grid-area: 1;
+	}
+	.logoImage {
+		text-align: center;
+		width: 1193px;
+		max-width: 90vw;
+		max-height: 250px;
+	}
+	.wrapper {
+		position: relative;
+		background-color: rgb(255, 255, 255);
+		grid-area: 2;
+	}
+	.content {
+		position: relative;
+		align-content: center;
+		align-items: center;
+		width: calc(~"100vw-40px");
+		box-sizing: border-box;
+	}
+	.bottom{
+		position: relative;
+		height: 250px;
+		grid-area: 3;
+
+	}
+</style>
