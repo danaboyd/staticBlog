@@ -1,0 +1,112 @@
+---
+const {title }  = Astro.props
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>DanaBoyd.com {title && " " + title}</title>
+	</head>
+	<body>
+
+		<div class="pageContainer">
+			<div class="pageTopSpace"></div>
+            <div class="pageCellLogo">
+				<div class="logoImage">
+					<a href="/"><img class="logoImage" src="/images/logo.png" /></a>
+				</div>
+            </div>
+            <div class="pageCellContent">
+                <slot />
+            </div>
+            <div class="pageCellFooter">
+                foot
+            </div>
+        </div>
+
+	</body>
+</html>
+
+<style>
+	* {
+    box-sizing: border-box;
+    }
+    body {
+        background-image: url("/images/forestReading.jpg");
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-color: black;
+    }
+    .pageContainer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px auto auto 150px;
+        width: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+    }
+    .pageTopSpace{
+        grid-row-start: 1;
+    }
+    .pageCellLogo{
+        grid-row-start: 2;
+    }
+    .pageCellContent{
+        grid-row-start: 3;
+        background-color: white;
+        width: 100%;
+    }
+    .pageCellFooter{
+        grid-row-start: 4;
+    }
+    .contentContainer{
+        display: grid;
+        grid-template-columns: auto-fit;
+        grid-template-rows: auto;
+        width: 100%;
+    }
+    .contentCellContent{
+        grid-column-start: 1;
+    }
+    .contentCellSide{
+        grid-column-start: 2;
+    }
+    .content{
+    padding: 20px;
+    flex: 3;
+    background-color: white;
+    }
+    .side{
+        flex: 1;
+        width: 100%;
+    }
+    .sideContent{
+        width: 100%;
+        padding: 20px;
+        background-color: white;
+        padding: 20px;
+    }
+    .wrapper{
+        display: flex;
+        width: 100%;
+    }
+    .logoImage {
+        width: 90%;
+        height: auto;
+        max-width: 1193px;
+        max-height: 250px;
+        padding-left: 4px;
+    }
+    @media (max-width: 768px){
+        .wrapper{
+            display: block;
+        }
+    }
+</style>

@@ -28,7 +28,7 @@ const processedDate = formatDate(date)
 ---
 
 <Layout title={title}>
-    <div class="container">
+    <div class="postContainer">
         <h3 style=`font-family: "Libre Franklin", "Helvetica Neue", "helvetica", "arial", "sans-serif"; font-weight: "bold"`>
             {title}
         </h3>
@@ -47,11 +47,14 @@ const processedDate = formatDate(date)
     </div>
 </Layout>
 
-<style>
-    .container{
+<style is:global>
+    .postContainer{
         position: relative;
-        padding-right: 20px;
-        padding-left: 20px;
-        max-width: 100vw;
+    }
+    .postContainer>p>img{
+        display: block;
+        max-height: 95vh;
+        max-width: 100%;
+        width: auto;
     }
 </style>

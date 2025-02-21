@@ -1,0 +1,54 @@
+<div class="contentContainer">
+    <div class="wrapper">
+        <div class="content">
+            <slot />
+        </div>
+        <div class="side">
+            <div class="sideContent">
+                <p>blah blah</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+	* {
+	box-sizing: border-box;
+	}
+	.contentContainer{
+		display: grid;
+		grid-template-columns: auto-fit;
+		grid-template-rows: auto;
+		width: 100%;
+	}
+	.contentCellContent{
+		grid-column-start: 1;
+	}
+	.contentCellSide{
+		grid-column-start: 2;
+	}
+	.content{
+	padding: 20px;
+	flex: 3;
+	background-color: white;
+	}
+	.side{
+		flex: 1;
+		width: 100%;
+	}
+	.sideContent{
+		width: 100%;
+		padding: 20px;
+		background-color: white;
+		padding: 20px;
+	}
+	.wrapper{
+		display: flex;
+		width: 100%;
+	}
+	@media (max-width: 768px){
+		.wrapper{
+			display: block;
+		}
+	}
+</style>
