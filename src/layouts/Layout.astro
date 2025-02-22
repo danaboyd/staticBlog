@@ -1,9 +1,10 @@
 ---
 import OuterLayout from "./OuterLayout.astro"
 import InnerLayout from "./InnerLayout.astro"
+const {title }  = Astro.props
 ---
 
-			<OuterLayout>
+			<OuterLayout title={title}>
 				<InnerLayout>
 					<slot />
 				</InnerLayout>
