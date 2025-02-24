@@ -1,0 +1,16 @@
+---
+layout: ../../../../layouts/BlogPostLayout.astro
+title: The Man With the Robot Brain
+date: 2009-06-05 19:29:37
+author: dboyd
+draft: false
+category: one liners
+tags: ['digital', 'titles']
+---
+<img
+    src="https://img.selfiespirits.com/images/2009/06/robotBrain.jpg"
+    alt="The Man With the Robot Brain"
+/>
+
+title sent by wendyw
+
