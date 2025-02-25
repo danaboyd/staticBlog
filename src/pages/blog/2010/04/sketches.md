@@ -1,0 +1,23 @@
+---
+layout: ../../../../layouts/BlogPostLayout.astro
+title: sketches
+date: 2010-04-20 16:21:09
+author: dboyd
+draft: false
+category: sketches
+tags: ['painter', 'sketches']
+---
+<img
+    srcset="https://img.selfiespirits.com/images/2010/04/blueHoodie_720.avif 720w, https://img.selfiespirits.com/images/2010/04/blueHoodie_480.avif 480w"
+    sizes="(max-width: 720px) 100vw, (max-width: 480px) 100vw"
+    src="https://img.selfiespirits.com/images/2010/04/blueHoodie.jpg"
+    alt=""
+/>
+
+<img
+    srcset="https://img.selfiespirits.com/images/2010/04/dan001_720.avif 720w, https://img.selfiespirits.com/images/2010/04/dan001_480.avif 480w"
+    sizes="(max-width: 720px) 100vw, (max-width: 480px) 100vw"
+    src="https://img.selfiespirits.com/images/2010/04/dan001.jpg"
+    alt=""
+/>
+
