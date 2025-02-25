@@ -8,6 +8,8 @@ category: one liners
 tags: ['digital']
 ---
 <img
+    srcset="https://img.selfiespirits.com/images/2009/06/carFire_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
     src="https://img.selfiespirits.com/images/2009/06/carFire.jpg"
     alt="That Shouldn't Be On Fire"
 />

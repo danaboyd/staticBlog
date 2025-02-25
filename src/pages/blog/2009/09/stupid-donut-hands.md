@@ -8,8 +8,10 @@ category: one liners
 tags: ['digital']
 ---
 <img
-src="https://img.selfiespirits.com/images/2009/09/donutHands.jpg"
-alt="Stupid Donut Hands"
+    srcset="https://img.selfiespirits.com/images/2009/09/donutHands_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
+    src="https://img.selfiespirits.com/images/2009/09/donutHands.jpg"
+    alt="Stupid Donut Hands"
 />
 
 title sent by Justin

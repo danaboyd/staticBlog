@@ -8,7 +8,9 @@ category: one liners
 tags: ['titles']
 ---
 <img
+    srcset="https://img.selfiespirits.com/images/2009/12/bearSharkSurf_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
     src="https://img.selfiespirits.com/images/2009/12/bearSharkSurf.jpg"
-    alt="This is Exactly as Planned"
+alt="This is Exactly as Planned"
 />
 

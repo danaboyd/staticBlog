@@ -8,9 +8,10 @@ category: one liners
 tags: ['digital', 'titles']
 ---
 <img
+    srcset="https://img.selfiespirits.com/images/2009/09/catBike_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
     src="https://img.selfiespirits.com/images/2009/09/catBike.jpg"
     alt="Your Bike is a Cat"
 />
 
 title sent by a kid on a bike
-

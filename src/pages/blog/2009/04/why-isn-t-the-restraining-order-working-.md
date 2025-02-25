@@ -8,7 +8,9 @@ category: one liners
 tags: ['digital', 'titles']
 ---
 <img
+    srcset="https://img.selfiespirits.com/images/2009/04/shoulderBird_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
     src="https://img.selfiespirits.com/images/2009/04/shoulderBird.jpg"
-    alt="Why Isn't the Restraining Order Working?"
+    alt="Why Isn't The Restraining Order Working?"
 />
 

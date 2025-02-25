@@ -8,9 +8,8 @@ category: one liners
 tags: ['titles']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2009/12/awesomePanda.jpg"
-    alt="Life is a Never Ending Struggle to be More Awesome Than a Panda"
+src="https://img.selfiespirits.com/images/2009/12/awesomePanda.jpg"
+alt="Life is a Never Ending Struggle to be More Awesome Than a Panda"
 />
 
 title sent by Ben quoting Cassidy
-

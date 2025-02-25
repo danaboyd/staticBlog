@@ -8,7 +8,7 @@ category: one liners
 tags: ['bear', 'shark', 'titles']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2009/02/bearsSharks.jpg"
-alt="bear shark surgery"
+src="https://img.selfiespirits.com/images/2009/02/bearsSharks.jpg"
+alt="I Never Said I Was a Doctor"
 />
 

@@ -8,7 +8,9 @@ category: one liners
 tags: ['digital', 'titles', 'urinal']
 ---
 <img
-src="https://img.selfiespirits.com/images/2009/04/cylonUrinal.jpg"
-alt="Why Does This Urinal Look Like a Cylon?"
+    srcset="https://img.selfiespirits.com/images/2009/04/cylonUrinal_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
+    src="https://img.selfiespirits.com/images/2009/04/cylonUrinal.jpg"
+    alt="Why Does This Urinal Look Like a Cylon?"
 />
 

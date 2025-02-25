@@ -8,9 +8,9 @@ category: one liners
 tags: ['digital']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2009/07/buttThink.jpg"
-    alt="Thinking of You"
+src="https://img.selfiespirits.com/images/2009/07/buttThink.jpg"
+alt="Thinking of You"
 />
 
-<p>Painting over <a href="http://tigr3ss.deviantart.com/art/ugh-128379158">KrisCrash’s quick sketches.</a></p>
+Painting over <a href="http://tigr3ss.deviantart.com/art/ugh-128379158">KrisCrash’s quick sketches.</a>
 

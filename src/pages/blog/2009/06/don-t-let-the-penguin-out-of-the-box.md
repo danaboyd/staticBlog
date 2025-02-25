@@ -8,6 +8,8 @@ category: one liners
 tags: ['digital']
 ---
 <img
+    srcset="https://img.selfiespirits.com/images/2009/06/penguinBox_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
     src="https://img.selfiespirits.com/images/2009/06/penguinBox.jpg"
     alt="Don't Let the Penguin Out of the Box"
 />

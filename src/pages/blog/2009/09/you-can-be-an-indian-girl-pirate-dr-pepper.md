@@ -8,9 +8,10 @@ category: one liners
 tags: ['digital']
 ---
 <img
-src="https://img.selfiespirits.com/images/2009/09/pirateGirl.jpg"
-alt="You Can Be an Indian Girl Pirate, Dr. Pepper"
+    srcset="https://img.selfiespirits.com/images/2009/09/pirateGirl_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
+    src="https://img.selfiespirits.com/images/2009/09/pirateGirl.jpg"
+    alt="You Can Be an Indian Girl Pirate, Dr. Pepper"
 />
 
 title sent by Justin, Chris, and Ben
-

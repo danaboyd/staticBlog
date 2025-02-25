@@ -8,8 +8,10 @@ category: one liners
 tags: ['digital']
 ---
 <img
+    srcset="https://img.selfiespirits.com/images/2009/05/cactusSkulls_480.avif 480w"
+    sizes="(max-width: 480px) 100vw"
     src="https://img.selfiespirits.com/images/2009/05/cactusSkulls.jpg"
-    alt="They Held Me Too Close"
+    alt="Theyt Held Me Too Close"
 />
 
 title sent by Aaron
