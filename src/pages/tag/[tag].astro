@@ -1,17 +1,65 @@
 ---
-import type { GetStaticPaths } from "astro";
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from 'astro:content';
 import {slugify} from "../../tools/utils";
 
+const {slug} = Astro.params
+const {tag} = Astro.props
+
 const allPosts = await getCollection("blog");
+export async function getStaticPaths(){
+  let tagList: string | any[] = [];
+  const allPosts = await getCollection("blog");
+  
+  allPosts.forEach(post => {
+    post.data.tags?.forEach(tag => {
+        if(!tagList.find(tagToFind => tagToFind.tag === tag)){
+            tagList.push({"tag": tag, "slug": slugify(tag)})
+        }
+    })
+  });
+
+  let paramList: any[] = []
+  tagList.forEach(tagObj => {
+    paramList.push(
+      {
+        params: {tag: tagObj.slug},
+        props: {tag: tagObj.tag}
+      }
+    )
+  })
+  console.log(paramList)
+
+  return paramList;
+}
+
+let filteredPosts: any[] = []
+
+allPosts.map((post) => {
+  let postTagSlugs = post.data?.tags?.map( str => slugify(str))
+  console.log(postTagSlugs)
+  if(postTagSlugs?.includes(slugify(tag))){
+    filteredPosts.push(post)
+    console.log("if push")
+  }
+})
+console.log("filtered posts")
+console.log(filteredPosts)
+  
+
+  
+
+  
+
+
+
 ---
 <Layout>
     <ul>
         <h2>{tag}</h2>
         {
-            allPosts.map((post)=>(
-                <li><a href={"/tag/" + tag.slug}>{post.data.title}</a></li>
+            filteredPosts.map((post)=>(
+                <li><a href={"/blog/" + post.id}>{post.data.title}</a></li>
             ))
         }
     </ul>

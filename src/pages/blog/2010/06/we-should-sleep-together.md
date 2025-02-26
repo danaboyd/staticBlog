@@ -5,7 +5,7 @@ date: 2010-06-16 18:59:59
 author: dboyd
 draft: false
 category: titles
-tags: ['digital', 'titles', 'sketch']
+tags: ['digital', 'titles', 'sketches']
 
 ---
 <img
