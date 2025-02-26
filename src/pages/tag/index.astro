@@ -1,0 +1,30 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from 'astro:content';
+import {slugify} from "../../tools/utils";
+
+const allPosts = await getCollection("blog");
+let tagList: string | any[] = [];
+
+allPosts.forEach(post => {
+    post.data.tags?.forEach(tag => {
+        if(!tagList.find(tagToFind => tagToFind.tag === tag)){
+            tagList.push({"tag": tag, "slug": slugify(tag)})
+        }
+    })
+});
+
+let sortedTags = tagList.sort((a,b) => a.tag - b.tag)
+console.log(tagList)
+
+---
+<Layout>
+    <ul>
+        <h2>List of Tags</h2>
+        {
+            sortedTags.map((tag)=>(
+                <li><a href={"/tag/" + tag.slug}>{tag.tag}</a></li>
+            ))
+        }
+    </ul>
+</Layout>

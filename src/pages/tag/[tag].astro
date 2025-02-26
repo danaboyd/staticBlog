@@ -1,0 +1,18 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from 'astro:content';
+import {slugify} from "../../tools/utils";
+
+const allPosts = await getCollection("blog");
+---
+<Layout>
+    <ul>
+        <h2>{tag}</h2>
+        {
+            allPosts.map((post)=>(
+                <li><a href={"/tag/" + tag.slug}>{post.data.title}</a></li>
+            ))
+        }
+    </ul>
+</Layout>

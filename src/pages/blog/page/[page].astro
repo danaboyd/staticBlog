@@ -8,7 +8,7 @@ export const getStaticPaths = (async ({paginate}) => {
     const allPosts = await getCollection("blog");
     allPosts.sort((a:any, b:any) => (b.data.date - a.data.date))
 
-    const paths = paginate(allPosts, {pageSize: 5})
+    const paths = paginate(allPosts, {pageSize: 10})
     
     return paths
 }) satisfies GetStaticPaths;
