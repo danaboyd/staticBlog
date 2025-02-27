@@ -1,5 +1,6 @@
 ---
 import Layout from "./Layout.astro";
+import {slugify} from "../tools/utils";
 
 const months = [
     'January',
@@ -37,12 +38,11 @@ const processedDate = formatDate(date)
         
         <br />
             <slot />
-        <span>{author}</span>
         <br />
         <span>{category}</span>
         <br />
         {
-            tags && (tags.map((tag:any) => (<span>{tag}</span><br />)))
+            tags && (tags.map((tag:any) => (<span><a href={"/tag/" + slugify(tag)}>{tag}</a></span><br />)))
         }
     </div>
 </Layout>
