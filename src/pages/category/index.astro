@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from 'astro:content';
+import {slugify} from "../../tools/utils";
+
+const allPosts = await getCollection("blog");
+let catList: string[] = []
+
+allPosts.forEach(post => {
+    if(!catList.includes(post?.data?.category))
+            catList.push(post.data.category);
+})
+let sortedCats = catList.sort((a: any,b: any) => a-b)
+---
+<Layout>
+    <ul>
+        <h2>Tags</h2>
+        {
+            sortedCats.map((cat)=>(
+                <li><a href={"/category/" + slugify(cat)}>{cat}</a></li>
+            ))
+        }
+    </ul>
+</Layout>
