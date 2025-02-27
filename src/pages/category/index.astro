@@ -10,7 +10,7 @@ allPosts.forEach(post => {
     if(!catList.includes(post?.data?.category))
             catList.push(post.data.category);
 })
-let sortedCats = catList.sort((a: any,b: any) => a-b)
+let sortedCats = catList.sort((a: any,b: any) => a.localeCompare(b))
 ---
 <Layout>
     <ul>
