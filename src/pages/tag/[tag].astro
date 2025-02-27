@@ -3,51 +3,46 @@ import Layout from "../../layouts/Layout.astro";
 import { getCollection } from 'astro:content';
 import {slugify} from "../../tools/utils";
 
-const {slug} = Astro.params
-const {tag} = Astro.props
+const {tag} = Astro.params
 
-const allPosts = await getCollection("blog");
 export async function getStaticPaths(){
-  let tagList: string | any[] = [];
   const allPosts = await getCollection("blog");
   
+  let tagList: string | any[] = [];
   allPosts.forEach(post => {
     post.data.tags?.forEach(tag => {
-        if(!tagList.find(tagToFind => tagToFind.tag === tag)){
-            tagList.push({"tag": tag, "slug": slugify(tag)})
+        if(!tagList.find(tagToFind => tagToFind === tag)){
+            tagList.push(tag)
         }
     })
   });
 
   let paramList: any[] = []
-  tagList.forEach(tagObj => {
+  tagList.forEach(tag => {
     paramList.push(
       {
-        params: {tag: tagObj.slug},
-        props: {tag: tagObj.tag}
+        params: {tag: slugify(tag)},
+        props: {tag: slugify(tag), posts: allPosts}
       }
     )
   })
-  console.log(paramList)
 
   return paramList;
 }
 
-let filteredPosts: any[] = []
 
-allPosts.map((post) => {
-  let postTagSlugs = post.data?.tags?.map( str => slugify(str))
-  console.log(postTagSlugs)
-  if(postTagSlugs?.includes(slugify(tag))){
-    filteredPosts.push(post)
-  }
+const {posts} = Astro.props
+
+let filteredPosts = posts.filter((post: { data: { tags: any[]; }; }) => {
+  let postTagSlugs = post.data?.tags?.map( (str: any) => slugify(str))
+  return postTagSlugs?.includes(slugify(tag))
 })
 ---
 <Layout>
     <ul>
         <h2>{tag}</h2>
         {
-            filteredPosts.map((post)=>(
+            filteredPosts.map((post: { id: string; data: { title: unknown; }; })=>(
                 <li><a href={"/blog/" + post.id}>{post.data.title}</a></li>
             ))
         }
