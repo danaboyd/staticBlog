@@ -14,7 +14,7 @@ let sortedCats = catList.sort((a: any,b: any) => a.localeCompare(b))
 ---
 <Layout>
     <ul>
-        <h2>Tags</h2>
+        <h2>Categories</h2>
         {
             sortedCats.map((cat)=>(
                 <li><a href={"/category/" + slugify(cat)}>{cat}</a></li>
