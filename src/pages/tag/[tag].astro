@@ -37,6 +37,7 @@ let filteredPosts = posts.filter((post: { data: { tags: any[]; }; }) => {
   let postTagSlugs = post.data?.tags?.map( (str: any) => slugify(str))
   return postTagSlugs?.includes(slugify(tag))
 })
+filteredPosts.sort((a: { data: { date: number; }; },b: { data: { date: number; }; }) => (a.data.date - b.data.date))
 ---
 <Layout>
     <ul>

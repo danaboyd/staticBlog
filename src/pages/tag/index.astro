@@ -18,7 +18,7 @@ let sortedTags = tagList.sort((a : any,b : any) => (a.tag.localeCompare(b.tag)))
 ---
 <Layout>
     <ul>
-        <h2>List of Tags</h2>
+        <h2>Tags</h2>
         {
             sortedTags.map((tag)=>(
                 <li><a href={"/tag/" + tag.slug}>{tag.tag}</a></li>
