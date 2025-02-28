@@ -1,0 +1,35 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import { getCollection } from 'astro:content';
+import {slugify, formatDate} from "../../../tools/utils";
+
+const posts = await getCollection("blog");
+const year = 2009;
+let monthList: number[] = []
+let yearList: number[] = []
+let filteredPosts = posts.filter(post => {
+    let month = new Date(post.data.date).getMonth()
+    let postDate = formatDate(post.data.date)
+    if(!yearList.includes(postDate.year)){
+        yearList.push(postDate.year)
+    }
+    if(!monthList.includes(month) && postDate.year === year){
+        monthList.push(month)
+    }
+    return postDate.year === year
+})
+console.log(monthList)
+console.log(yearList)
+
+filteredPosts.sort((a: any, b: any) => a.data.date - b.data.date)
+---
+<Layout>
+    <ul>
+        <h2>2009</h2>
+        {
+            filteredPosts.map((post: { id: string; data: { title: unknown; }; })=>(
+                <li><a href={"/blog/" + post.id}>{post.data.title}</a></li>
+            ))
+        }
+    </ul>
+</Layout>

@@ -1,30 +1,9 @@
 ---
 import Layout from "./Layout.astro";
-import {slugify} from "../tools/utils";
-
-const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
-]
-
-function formatDate(date: string){
-    const postDate = new Date(date)
-    const monthInt = postDate.getMonth()
-    return months[monthInt] + " " + postDate.getDate() + ", " + postDate.getFullYear()
-}
+import {slugify, formatDate, monthToName} from "../tools/utils";
 
 const { frontmatter } = Astro.props;
-const { title, date, category, author, tags} = frontmatter;
+const { title, date, category, tags} = frontmatter;
 const processedDate = formatDate(date)
 ---
 
@@ -33,7 +12,10 @@ const processedDate = formatDate(date)
         <h3 style=`font-family: "Libre Franklin", "Helvetica Neue", "helvetica", "arial", "sans-serif"; font-weight: "bold"`>
             {title}
         </h3>
-        <strong style=`font-family: "Libre Franklin", "Helvetica Neue", helvetica`>{processedDate}</strong>
+        <strong style=`font-family: "Libre Franklin", "Helvetica Neue", helvetica`>
+            {processedDate.year + " " + monthToName(processedDate.month) + " " + processedDate.date} in 
+            <a href={"/category/" + slugify(category)}>{category}</a>
+        </strong>
         <br />
         
         <br />
