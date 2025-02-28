@@ -4,7 +4,7 @@ title: We Should Sleep Together
 date: 2010-06-16 18:59:59
 author: dboyd
 draft: false
-category: titles
+category: one liners
 tags: ['digital', 'titles', 'sketches']
 
 ---
