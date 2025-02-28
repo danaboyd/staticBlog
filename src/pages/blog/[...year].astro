@@ -1,7 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import { getCollection } from 'astro:content';
-import {slugify, formatDate} from "../../tools/utils";
+import {monthToName, formatDate} from "../../tools/utils";
 
 
 export async function getStaticPaths(){
@@ -63,10 +63,11 @@ let filteredPosts = posts.filter((post: {
     }
 })
 filteredPosts.sort((a: any, b: any) => a.data.date - b.data.date)
+let monthF =  monthToName(parseInt(month) - 1)
 ---
 <Layout>
     <ul>
-        <h2>{year} {month}</h2>
+        <h2>{year} {month ? monthF: ""}</h2>
         {
             filteredPosts.map((post: { id: string; data: { title: unknown; }; })=>(
                 <li><a href={"/blog/" + post.id}>{post.data.title}</a></li>
