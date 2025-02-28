@@ -1,0 +1,84 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { getCollection } from 'astro:content';
+import {slugify, formatDate} from "../../tools/utils";
+
+
+export async function getStaticPaths(){
+    const allPosts = await getCollection("blog");
+    let yearList: number[] = []
+    let paramList: any[] = []
+    allPosts.forEach(post => {
+        let postDate = formatDate(post.data.date)
+        if(!yearList.includes(postDate.year)){
+            yearList.push(postDate.year)
+        }
+    })
+    yearList.forEach(year => {
+        let monthList: number[] = []
+        allPosts.forEach(post =>{
+            let postDate = formatDate(post.data.date)
+            if(postDate.year === year && !monthList.includes(postDate.month)){
+                monthList.push(postDate.month)
+            }
+        })
+        //add to paramlist year
+        paramList.push(
+            {
+                params: {year: year},
+                props: {year: year, month: null, posts: allPosts}
+            }
+        )
+        //foreach month add paramList year/month
+        monthList.forEach(month => {
+            month += 1
+            let monthFormatted;
+            if(month < 10){
+                monthFormatted = '0' + month.toString()
+            }else {
+                monthFormatted = month
+            }
+            paramList.push(
+                {
+                    params: {year: year + "/" + monthFormatted},
+                    props: {year: year, month: month, posts: allPosts}
+                }
+            )
+        });
+    })
+    //get all years
+        //for each Year get all months
+            //push those to paramList
+    // {
+    //     params: {year: year/month},
+    //     props: {year: year, month: month, posts: allPosts}
+    // }
+    
+    console.log(paramList)
+    return paramList;
+}
+
+const {year, month, posts} = Astro.props
+
+let filteredPosts = posts.filter((post: {
+[x: string]: any; date: any; 
+}) => {
+    let postDate = formatDate(post.data.date)
+    if(month){
+        return (postDate.year === year && postDate.month === month - 1)
+    }else{
+        return (postDate.year === year)
+    }
+})
+filteredPosts.sort((a: any, b: any) => a.data.date - b.data.date)
+---
+<Layout>
+    <ul>
+        <h2>{year} {month}</h2>
+        {
+            filteredPosts.map((post: { id: string; data: { title: unknown; }; })=>(
+                <li><a href={"/blog/" + post.id}>{post.data.title}</a></li>
+            ))
+        }
+    </ul>
+</Layout>
