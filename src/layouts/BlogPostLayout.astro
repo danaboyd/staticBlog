@@ -21,9 +21,11 @@ if(month < 10){
             {title}
         </h3>
         <strong style=`font-family: "Libre Franklin", "Helvetica Neue", helvetica`>
-            <a href={"/blog/" + processedDate.year}>{processedDate.year + " "}</a>
-            <a href={"/blog/" + processedDate.year + "/" + monthF}>{monthToName(processedDate.month) + " "}</a>
-            { processedDate.date} in 
+            <a href={"/blog/" + processedDate.year}>{processedDate.year}</a>
+            {" "}
+            <a href={"/blog/" + processedDate.year + "/" + monthF}>{monthToName(processedDate.month)}</a>
+            {" "}
+            {processedDate.date} in 
             <a href={"/category/" + slugify(category)}>{category}</a>
         </strong>
         <br />

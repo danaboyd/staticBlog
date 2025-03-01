@@ -67,7 +67,9 @@ let monthF =  monthToName(parseInt(month) - 1)
 ---
 <Layout>
     <ul>
-        <h2>{year} {month ? monthF: ""}</h2>
+        <h2>
+            <a href={"/blog/" + year}>{year}</a> {month ? monthF: ""}
+        </h2>
         {
             filteredPosts.map((post: { id: string; data: { title: unknown; }; })=>(
                 <li><a href={"/blog/" + post.id}>{post.data.title}</a></li>
