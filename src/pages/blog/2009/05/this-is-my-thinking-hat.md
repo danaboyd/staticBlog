@@ -8,9 +8,9 @@ category: one liners
 tags: ['digital', 'titles']
 ---
 <img
-    srcset="https://img.selfiespirits.com/images/2009/05/thinkingHat_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2009/05/thinkingHat_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2009/05/thinkingHat.jpg"
+    src="https://img.danaboyd.com/images/2009/05/thinkingHat.jpg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />

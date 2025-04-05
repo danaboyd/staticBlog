@@ -8,9 +8,9 @@ category: one liners
 tags: ['titles']
 ---
 <img
-    srcset="https://img.selfiespirits.com/images/2010/02/snailTentacles_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2010/02/snailTentacles_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2010/02/snailTentacles.jpg"
+    src="https://img.danaboyd.com/images/2010/02/snailTentacles.jpg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />

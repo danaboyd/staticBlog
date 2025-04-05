@@ -8,9 +8,9 @@ category: sketches
 tags: ['park', 'sketches', 'watercolor']
 ---
 <img
-    srcset="https://img.selfiespirits.com/images/2012/12/lakeLotusBoardwalk001_1080.avif 1080w, https://img.selfiespirits.com/images/2012/12/lakeLotusBoardwalk001_720.avif 720w, https://img.selfiespirits.com/images/2012/12/lakeLotusBoardwalk001_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2012/12/lakeLotusBoardwalk001_1080.avif 1080w, https://img.danaboyd.com/images/2012/12/lakeLotusBoardwalk001_720.avif 720w, https://img.danaboyd.com/images/2012/12/lakeLotusBoardwalk001_480.avif 480w"
     sizes="(max-width: 1080px) 100vw, (max-width: 720px) 100vw, (max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2012/12/lakeLotusBoardwalk001.jpg"
+    src="https://img.danaboyd.com/images/2012/12/lakeLotusBoardwalk001.jpg"
     alt=""
     style="width: clamp(0px, 100%, 1200px); height: auto;"
 />

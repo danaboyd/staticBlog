@@ -8,9 +8,9 @@ category: one liners
 tags: ['titles']
 ---
 <img
-    srcset="https://img.selfiespirits.com/images/2009/09/dinoHorn_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2009/09/dinoHorn_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2009/09/dinoHorn.jpg"
+    src="https://img.danaboyd.com/images/2009/09/dinoHorn.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 825px);"
 />

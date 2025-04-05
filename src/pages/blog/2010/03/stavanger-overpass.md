@@ -8,9 +8,9 @@ category: sketches
 tags: ['painter', 'sketches', 'the virtual paintout']
 ---
 <img
-    srcset="https://img.selfiespirits.com/images/2010/03/stavangerOverPass_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2010/03/stavangerOverPass_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2010/03/stavangerOverPass.jpg"
+    src="https://img.danaboyd.com/images/2010/03/stavangerOverPass.jpg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />

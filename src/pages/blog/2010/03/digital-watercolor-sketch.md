@@ -8,9 +8,9 @@ category: sketches
 tags: ['painter', 'sketches']
 ---
 <img
-    srcset="https://img.selfiespirits.com/images/2010/03/waterColorDanny_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2010/03/waterColorDanny_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2010/03/waterColorDanny.jpg"
+    src="https://img.danaboyd.com/images/2010/03/waterColorDanny.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 600px);"
 />

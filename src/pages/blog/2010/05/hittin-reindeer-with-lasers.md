@@ -8,7 +8,7 @@ category: one liners
 tags: ['digital']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2010/05/deerLasers.jpg"
+    src="https://img.danaboyd.com/images/2010/05/deerLasers.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 600px);"
 />

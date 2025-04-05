@@ -8,9 +8,9 @@ category: one liners
 tags: ['digital']
 ---
 <img
-    srcset="https://img.selfiespirits.com/images/2009/06/carFire_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2009/06/carFire_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2009/06/carFire.jpg"
+    src="https://img.danaboyd.com/images/2009/06/carFire.jpg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />

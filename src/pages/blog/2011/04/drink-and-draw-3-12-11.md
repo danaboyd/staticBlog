@@ -12,7 +12,7 @@ The second Saturday night of the month is Drink and draw over at <a href="http:/
 Dante in Drag
 
 <img
-    src="https://img.selfiespirits.com/images/2011/04/danteDrag001.jpg"
+    src="https://img.danaboyd.com/images/2011/04/danteDrag001.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 600px);"
 />
@@ -20,9 +20,9 @@ Dante in Drag
 Batman Alone on Valentine's Day
 
 <img
-    srcset="https://img.selfiespirits.com/images/2011/04/batAlone001_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/04/batAlone001_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/04/batAlone001.jpg"
+    src="https://img.danaboyd.com/images/2011/04/batAlone001.jpg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />
@@ -30,9 +30,9 @@ Batman Alone on Valentine's Day
 Black Widow Treating Herself to a Day at the Spa
 
 <img
-    srcset="https://img.selfiespirits.com/images/2011/04/hulkBubbles_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/04/hulkBubbles_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/04/hulkBubbles.jpg"
+    src="https://img.danaboyd.com/images/2011/04/hulkBubbles.jpg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />
@@ -40,9 +40,9 @@ Black Widow Treating Herself to a Day at the Spa
 Harvey Birdman and His Nemesis
 
 <img
-    srcset="https://img.selfiespirits.com/images/2011/04/harveyBirdman001_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/04/harveyBirdman001_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/04/harveyBirdman001.jpg"
+    src="https://img.danaboyd.com/images/2011/04/harveyBirdman001.jpg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />

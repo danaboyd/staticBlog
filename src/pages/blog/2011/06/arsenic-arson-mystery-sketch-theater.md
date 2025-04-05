@@ -9,49 +9,49 @@ tags: ['geek easy', 'mystery sketch theater', 'paper', 'pencil', 'sketches', 'wa
 ---
 Sketches of <a href="http://arsenicarson.tumblr.com/">Arsenic Arson</a> from June's <a href="http://www.facebook.com/home.php?sk=group_47352205905">Mystery Sketch Theater</a>
 <img
-    srcset="https://img.selfiespirits.com/images/2011/06/arsenicArson001_1080.avif 1080w, https://img.selfiespirits.com/images/2011/06/arsenicArson001_720.avif 720w, https://img.selfiespirits.com/images/2011/06/arsenicArson001_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/06/arsenicArson001_1080.avif 1080w, https://img.danaboyd.com/images/2011/06/arsenicArson001_720.avif 720w, https://img.danaboyd.com/images/2011/06/arsenicArson001_480.avif 480w"
     sizes="(max-width: 1080px) 100vw, (max-width: 720px) 100vw, (max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/06/arsenicArson001.jpg"
+    src="https://img.danaboyd.com/images/2011/06/arsenicArson001.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 2924px);"
 />
 
 <img
-    srcset="https://img.selfiespirits.com/images/2011/06/arsenicArson002_3000.avif 3000w, https://img.selfiespirits.com/images/2011/06/arsenicArson002_2000.avif 2000w, https://img.selfiespirits.com/images/2011/06/arsenicArson002_1080.avif 1080w, https://img.selfiespirits.com/images/2011/06/arsenicArson002_720.avif 720w, https://img.selfiespirits.com/images/2011/06/arsenicArson002_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/06/arsenicArson002_3000.avif 3000w, https://img.danaboyd.com/images/2011/06/arsenicArson002_2000.avif 2000w, https://img.danaboyd.com/images/2011/06/arsenicArson002_1080.avif 1080w, https://img.danaboyd.com/images/2011/06/arsenicArson002_720.avif 720w, https://img.danaboyd.com/images/2011/06/arsenicArson002_480.avif 480w"
     sizes="(max-width: 3000px) 100vw, (max-width: 2000px) 100vw, (max-width: 1080px) 100vw, (max-width: 720px) 100vw, (max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/06/arsenicArson002.jpg"
+    src="https://img.danaboyd.com/images/2011/06/arsenicArson002.jpg"
     alt=""
     style="width: clamp(0px, 100%, 3299px); height: auto;"
 />
 
 <img
-    srcset="https://img.selfiespirits.com/images/2011/06/arsenicArson003_720.avif 720w, https://img.selfiespirits.com/images/2011/06/arsenicArson003_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/06/arsenicArson003_720.avif 720w, https://img.danaboyd.com/images/2011/06/arsenicArson003_480.avif 480w"
     sizes="(max-width: 720px) 100vw, (max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/06/arsenicArson003.jpg"
+    src="https://img.danaboyd.com/images/2011/06/arsenicArson003.jpg"
     alt=""
     style="width: clamp(0px, 100%, 1000px); height: auto;"
 />
 
 <img
-    srcset="https://img.selfiespirits.com/images/2011/06/arsenicArson004_720.avif 720w, https://img.selfiespirits.com/images/2011/06/arsenicArson004_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/06/arsenicArson004_720.avif 720w, https://img.danaboyd.com/images/2011/06/arsenicArson004_480.avif 480w"
     sizes="(max-width: 720px) 100vw, (max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/06/arsenicArson004.jpg"
+    src="https://img.danaboyd.com/images/2011/06/arsenicArson004.jpg"
     alt=""
     style="width: clamp(0px, 100%, 1000px); height: auto;"
 />
 
 <img
-    srcset="https://img.selfiespirits.com/images/2011/06/arsenicArson005_720.avif 720w, https://img.selfiespirits.com/images/2011/06/arsenicArson005_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/06/arsenicArson005_720.avif 720w, https://img.danaboyd.com/images/2011/06/arsenicArson005_480.avif 480w"
     sizes="(max-width: 720px) 100vw, (max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/06/arsenicArson005.gif"
+    src="https://img.danaboyd.com/images/2011/06/arsenicArson005.gif"
     alt=""
     style="width: clamp(0px, 100%, 1000px); height: auto;"
 />
 
 <img
-    srcset="https://img.selfiespirits.com/images/2011/06/arsenicArson006_720.avif 720w, https://img.selfiespirits.com/images/2011/06/arsenicArson006_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2011/06/arsenicArson006_720.avif 720w, https://img.danaboyd.com/images/2011/06/arsenicArson006_480.avif 480w"
     sizes="(max-width: 720px) 100vw, (max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2011/06/arsenicArson006.gif"
+    src="https://img.danaboyd.com/images/2011/06/arsenicArson006.gif"
     alt=""
     style="width: clamp(0px, 100%, 1000px); height: auto;"
 />

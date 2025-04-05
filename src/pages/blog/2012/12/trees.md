@@ -9,9 +9,9 @@ tags: ['paper', 'sketches', 'watercolor']
 ---
 
 <img
-    srcset="https://img.selfiespirits.com/images/2012/12/drivewaySunTrees001_720.avif 720w, https://img.selfiespirits.com/images/2012/12/drivewaySunTrees001_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2012/12/drivewaySunTrees001_720.avif 720w, https://img.danaboyd.com/images/2012/12/drivewaySunTrees001_480.avif 480w"
     sizes="(max-width: 720px) 100vw, (max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2012/12/drivewaySunTrees001.jpg"
+    src="https://img.danaboyd.com/images/2012/12/drivewaySunTrees001.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 1000px);"
 />

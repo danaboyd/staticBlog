@@ -8,7 +8,7 @@ category: sketches
 tags: ['painter', 'sketches']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2010/02/cap001.jpg"
+    src="https://img.danaboyd.com/images/2010/02/cap001.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 570px);"
 />

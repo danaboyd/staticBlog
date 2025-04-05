@@ -8,7 +8,7 @@ category: one liners
 tags: ['digital', 'titles']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2010/03/seaPanda.jpg"
+    src="https://img.danaboyd.com/images/2010/03/seaPanda.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 600px);"
 />

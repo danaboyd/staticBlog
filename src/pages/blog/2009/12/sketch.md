@@ -8,15 +8,15 @@ category: sketches
 tags: ['painter', 'sketches']
 ---
 <img
-    srcset="https://img.selfiespirits.com/images/2009/12/doll_480.avif 480w"
+    srcset="https://img.danaboyd.com/images/2009/12/doll_480.avif 480w"
     sizes="(max-width: 480px) 100vw"
-    src="https://img.selfiespirits.com/images/2009/12/doll.jpg"
+    src="https://img.danaboyd.com/images/2009/12/doll.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 600px);"
 />
 
 <img
-    src="https://img.selfiespirits.com/images/2009/12/reid.jpg"
+    src="https://img.danaboyd.com/images/2009/12/reid.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 598px);"
 />

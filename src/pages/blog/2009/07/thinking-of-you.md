@@ -8,7 +8,7 @@ category: one liners
 tags: ['digital']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2009/07/buttThink.jpg"
+    src="https://img.danaboyd.com/images/2009/07/buttThink.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 600px);"
 />

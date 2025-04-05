@@ -8,7 +8,7 @@ category: titles
 
 ---
 <img
-    src="https://img.selfiespirits.com/images/2010/06/sleepTogether.jpeg"
+    src="https://img.danaboyd.com/images/2010/06/sleepTogether.jpeg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />

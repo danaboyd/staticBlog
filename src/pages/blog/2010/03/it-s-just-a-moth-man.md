@@ -8,7 +8,7 @@ category: one liners
 tags: ['titles']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2010/03/mothHead.jpg"
+    src="https://img.danaboyd.com/images/2010/03/mothHead.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 600px);"
 />

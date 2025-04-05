@@ -8,7 +8,7 @@ category: one liners
 
 ---
 <img
-    src="https://img.selfiespirits.com/images/2010/06/planetPants.jpeg"
+    src="https://img.danaboyd.com/images/2010/06/planetPants.jpeg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 600px);"
 />

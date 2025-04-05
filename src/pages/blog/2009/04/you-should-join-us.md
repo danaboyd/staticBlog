@@ -8,7 +8,7 @@ category: one liners
 tags: ['digital', 'titles']
 ---
 <img
-    src="https://img.selfiespirits.com/images/2009/04/giant.jpg"
+    src="https://img.danaboyd.com/images/2009/04/giant.jpg"
     alt=""
     style="width: auto; height: clamp(0px, 95vh, 700px);"
 />

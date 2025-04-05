@@ -8,7 +8,7 @@ category: one liners
 
 ---
 <img
-    src="https://img.selfiespirits.com/images/2011/04/elephantsVsSharks-1.jpeg"
+    src="https://img.danaboyd.com/images/2011/04/elephantsVsSharks-1.jpeg"
     alt=""
     style="width: clamp(0px, 100%, 600px); height: auto;"
 />
