@@ -11,7 +11,6 @@ Some of this month's sketches from Mystery Sketch Theater, a model drawing group
 
 This month's model was <a href="http://giryagirl.com/">Adrienne Harvey</a>
 
-<a href="https://danaboyd.local/wp-content/uploads/2013/01/mstk001.jpg"><img class="alignnone size-full wp-image-443" alt="mstk001" src="https://danaboyd.local/wp-content/uploads/2013/01/mstk001.jpg" width="563" height="1500" /></a>
 <img
 srcset="https://img.danaboyd.com/images/2013/01/mstk001_480.avif 480w"
 sizes="(max-width: 480px) 100vw"
